@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="./calculator.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 class="text-center">Calculator</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-3 bg-dark p-3 rounded">
+          <div class="row justify-content-center">
+            <input
+              type="text"
+              class="pl-4 pr-4 pt-2 form-control w-75 bg-dark border-white text-white"
+              onkeypress="onEnter()"
+              id="textInput"
+            />
+          </div>
+          <div class="row justify-content-center">
+            <button onclick="handleClear()" class="clear-button">AC</button>
+          </div>
+          <div class="row justify-content-center p-1">
+            <button onclick="handleClick('7')" class="m-1">7</button>
+            <button onclick="handleClick('8')" class="m-1">8</button>
+            <button onclick="handleClick('9')" class="m-1">9</button>
+            <button onclick="handleClick('/')" class="m-1">/</button>
+          </div>
+          <div class="row justify-content-center p-1">
+            <button onclick="handleClick('4')" class="m-1">4</button>
+            <button onclick="handleClick('5')" class="m-1">5</button>
+            <button onclick="handleClick('6')" class="m-1">6</button>
+            <button onclick="handleClick('*')" class="m-1">*</button>
+          </div>
+          <div class="row justify-content-center p-1">
+            <button onclick="handleClick('1')" class="m-1">1</button>
+            <button onclick="handleClick('2')" class="m-1">2</button>
+            <button onclick="handleClick('3')" class="m-1">3</button>
+            <button onclick="handleClick('-')" class="m-1">-</button>
+          </div>
+          <div class="row justify-content-center p-1">
+            <button onclick="handleClick('0')" class="m-1">0</button>
+            <button onclick="handleClick('.')" class="m-1">.</button>
+            <button onclick="calcData()" class="m-1">=</button>
+            <button onclick="handleClick('+')" class="m-1">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
